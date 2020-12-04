@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Baloo Da 2", cursive;
+    font-family: "Hind", "Baloo Da 2", cursive;
 }
 body {
     background-color: #fdf2e9;
@@ -42,4 +43,7 @@ a:hover {
     background-color: aquamarine;
     bottom: 0px;
     width: 100%;
+}
+.inner {
+    display: inline-block;
 }
