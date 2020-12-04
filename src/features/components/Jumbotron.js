@@ -16,23 +16,26 @@ const Jumbotron = () => {
                 Donate, because your Extra can be someone’s Need.
             </p>
             <p>What do you want to donate ?</p>
-            <a className='btn btn-dark btn-lg' href='/donateFood' role='button'>
+            <a
+                className='btn btn-dark btn-lg mr-2'
+                href='/donateFood'
+                role='button'>
                 Donate Food
             </a>
             <a
-                className='btn btn-dark btn-lg'
+                className='btn btn-dark btn-lg ml-2'
                 href='/donateCloth'
                 role='button'>
                 Donate Cloths
             </a>
             <a
-                className='btn btn-dark btn-lg'
+                className='btn btn-dark btn-lg ml-2'
                 href='/donateOther'
                 role='button'>
                 Donate Other Necessities
             </a>
             <a
-                className='btn btn-dark btn-lg'
+                className='btn btn-dark btn-lg ml-2'
                 href='https://www.pmcares.gov.in/en/'
                 role='button'>
                 Donate Money at PM care fund

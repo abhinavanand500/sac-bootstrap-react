@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
+    const [userName, setUserName] = useState("");
+    const [Fname, setFname] = useState("");
+    const [Lname, setLname] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [pin, setPin] = useState("");
+    const [phone, setPhone] = useState("");
+
+    const submitSignUp = (e) => {
+        e.preventDefault();
+        console.log("Hii", Fname);
+        // modal("toggle");
+        // return false;
+    };
+
     return (
         <>
             <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
@@ -22,11 +38,12 @@ const Navbar = () => {
                     className='collapse navbar-collapse'
                     id='navbarSupportedContent'>
                     <ul className='navbar-nav mr-auto'>
-                        <li className='nav-item active'>
+                        <li className='nav-item'>
                             <NavLink className='nav-link' to='/'>
                                 Home <span className='sr-only'>(current)</span>
                             </NavLink>
                         </li>
+
                         <li className='nav-item'>
                             <NavLink className='nav-link' to='/about'>
                                 About <span className='sr-only'>(current)</span>
@@ -49,6 +66,7 @@ const Navbar = () => {
                             className='btn btn-outline-success my-2 my-sm-2 mx-2'
                             href='https://join.slack.com/t/sacate/shared_invite/zt-g05v625j-CYp~WYorMyCYT7O2b3z4pg'
                             role='button'
+                            rel='noreferrer'
                             target='_blank'>
                             Join us on Slack
                         </a>
@@ -58,6 +76,7 @@ const Navbar = () => {
                                 className='btn btn-outline-success my-2 my-sm-2'
                                 href='https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd4580ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378'
                                 role='button'
+                                rel='noreferrer'
                                 target='_blank'>
                                 Chat With SacBot
                             </a>
@@ -102,11 +121,15 @@ const Navbar = () => {
                             </button>
                         </div>
                         <div className='modal-body'>
-                            <form action='/handleSignup' method='post'>
+                            <form onSubmit={submitSignUp} method='post'>
                                 <div className='form-group'>
                                     <label forhtml='username'>Username</label>
                                     <input
                                         type='text'
+                                        value={userName}
+                                        onChange={(e) => {
+                                            setUserName(e.target.value);
+                                        }}
                                         className='form-control'
                                         id='username'
                                         name='username'
@@ -118,6 +141,10 @@ const Navbar = () => {
                                     <input
                                         type='text'
                                         className='form-control'
+                                        value={Fname}
+                                        onChange={(e) => {
+                                            setFname(e.target.value);
+                                        }}
                                         id='fname'
                                         name='fname'
                                         required
@@ -128,6 +155,10 @@ const Navbar = () => {
                                     <input
                                         type='text'
                                         className='form-control'
+                                        value={Lname}
+                                        onChange={(e) => {
+                                            setLname(e.target.value);
+                                        }}
                                         id='lname'
                                         name='lname'
                                         required
@@ -139,6 +170,10 @@ const Navbar = () => {
                                         type='email'
                                         className='form-control'
                                         id='emailid'
+                                        value={email}
+                                        onChange={(e) =>
+                                            setEmail(e.target.value)
+                                        }
                                         name='email'
                                         required
                                     />
@@ -152,17 +187,25 @@ const Navbar = () => {
                                         className='form-control'
                                         id='exampleInputPassword1'
                                         name='pass1'
+                                        value={password}
+                                        onChange={(e) =>
+                                            setPassword(e.target.value)
+                                        }
                                         required
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label forhtml='exampleInputPassword2'>
+                                    <label forhtml='exampleInputPassword22'>
                                         Confirm your Password
                                     </label>
                                     <input
                                         type='password'
                                         className='form-control'
-                                        id='exampleInputPassword2'
+                                        id='exampleInputPassword22'
+                                        value={confirmPassword}
+                                        onChange={(e) =>
+                                            setConfirmPassword(e.target.value)
+                                        }
                                         name='pass2'
                                         required
                                     />
@@ -175,6 +218,10 @@ const Navbar = () => {
                                         type='text'
                                         className='form-control'
                                         id='lna'
+                                        value={pin}
+                                        onChange={(e) => {
+                                            setPin(e.target.value);
+                                        }}
                                         name='zip'
                                         required
                                     />
@@ -185,6 +232,10 @@ const Navbar = () => {
                                         type='text'
                                         className='form-control'
                                         id='lnam'
+                                        value={phone}
+                                        onChange={(e) => {
+                                            setPhone(e.target.value);
+                                        }}
                                         name='phone'
                                         required
                                     />
