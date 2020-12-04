@@ -1,12 +1,12 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <>
             <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-                <a className='navbar-brand' href='#'>
+                <NavLink className='navbar-brand' to='/'>
                     SACATE
-                </a>
+                </NavLink>
                 <button
                     className='navbar-toggler'
                     type='button'
@@ -23,25 +23,25 @@ const Navbar = () => {
                     id='navbarSupportedContent'>
                     <ul className='navbar-nav mr-auto'>
                         <li className='nav-item active'>
-                            <a className='nav-link' href='#'>
+                            <NavLink className='nav-link' to='/'>
                                 Home <span className='sr-only'>(current)</span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#'>
+                            <NavLink className='nav-link' to='/about'>
                                 About <span className='sr-only'>(current)</span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#'>
+                            <NavLink className='nav-link' to='/feed'>
                                 Feed <span className='sr-only'>(current)</span>
-                            </a>
+                            </NavLink>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#'>
+                            <NavLink className='nav-link' to='/contact'>
                                 Contact{" "}
                                 <span className='sr-only'>(current)</span>
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                     <div className='ml-auto form-inline mx-1'>
@@ -83,7 +83,7 @@ const Navbar = () => {
             <div
                 className='modal fade'
                 id='signupModal'
-                tabindex='-1'
+                tabIndex='-1'
                 role='dialog'
                 aria-labelledby='signupModal'
                 aria-hidden='true'>
@@ -104,7 +104,7 @@ const Navbar = () => {
                         <div className='modal-body'>
                             <form action='/handleSignup' method='post'>
                                 <div className='form-group'>
-                                    <label for='username'>Username</label>
+                                    <label forhtml='username'>Username</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -114,7 +114,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='fname'>First Name</label>
+                                    <label forhtml='fname'>First Name</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -124,7 +124,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='lname'>Last Name</label>
+                                    <label forhtml='lname'>Last Name</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -134,7 +134,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='emailid'>Email</label>
+                                    <label forhtml='emailid'>Email</label>
                                     <input
                                         type='email'
                                         className='form-control'
@@ -144,7 +144,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='exampleInputPassword1'>
+                                    <label forhtml='exampleInputPassword1'>
                                         Password
                                     </label>
                                     <input
@@ -156,7 +156,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='exampleInputPassword2'>
+                                    <label forhtml='exampleInputPassword2'>
                                         Confirm your Password
                                     </label>
                                     <input
@@ -168,7 +168,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='lna'>
+                                    <label forhtml='lna'>
                                         Postal Code of your Area
                                     </label>
                                     <input
@@ -180,7 +180,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='lnam'>Phone Number</label>
+                                    <label forhtml='lnam'>Phone Number</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -204,7 +204,7 @@ const Navbar = () => {
             <div
                 className='modal fade'
                 id='signinModal'
-                tabindex='-1'
+                tabIndex='-1'
                 role='dialog'
                 aria-labelledby='signupModal'
                 aria-hidden='true'>
@@ -225,7 +225,7 @@ const Navbar = () => {
                         <div className='modal-body'>
                             <form action='/handleLogin' method='post'>
                                 <div className='form-group'>
-                                    <label for='user'>Username</label>
+                                    <label forhtml='user'>Username</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -234,7 +234,7 @@ const Navbar = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='loginpass'>Password</label>
+                                    <label forhtml='loginpass'>Password</label>
                                     <input
                                         type='password'
                                         className='form-control'
