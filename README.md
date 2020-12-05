@@ -1,68 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# SACATE
 
-## Available Scripts
+An easy-to-navigate website which can be used to donate food/clothes to the distribution centres as well as a direction to the well-funded PMCARES charitable trust. You can always interact with our chatbot to know more about the COVID-19 pandemic and keep up-to-date with current happenings.
 
-In the project directory, you can run:
+## Steps
 
-### `npm start`
+1. Clone this repository to your local computer.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Open the project in an editor of your preference.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+3. Use the package manager [npm](https://pip.pypa.io/en/stable/) to install dependencies.
 
-### `npm test`
+    ```bash
+      npm i
+    ```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Run your server
 
-### `npm run build`
+    ```bash
+       npm start
+    ```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    or, the below command if your default python version is python2 use [python3](https://www.python.org/downloads/)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+    ```bash
+      python3 manage.py runserver
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Your server should be up and running now.
 
-### `npm run eject`
+## SACBOT SERVICE AND SLACK
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+We provided two options for normal User to clarify their doubts. Both of them is discussed below. We have used **IBM Service** for Chatbot Services
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+-   **SACBOT**
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    This is a BOT which will answer your all your Doubts regarding our Motive and guide you to Donation method. Also this BOT can give you Information about COVID 19
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-   **SLACK**
 
-## Learn More
+    If normal user have any question or complain, then they can contact us in Slack. We have also Integrated SACBOT in SLACK. Users can also interact to SACBOT in SLACK
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   **User**
 
-### Code Splitting
+    This table contains details of all user and their role.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+-   **Contact**
 
-### Analyzing the Bundle Size
+    This table contains queries that enduser will ask.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+-   **DonatedCloth**
 
-### Making a Progressive Web App
+    This table contains details of users and cloths donated.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+-   **DonatedFood**
 
-### Advanced Configuration
+    This table contains details of users and foods donated.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+-   **NewsFeed**
 
-### Deployment
+    This table contains message that donation camp wants to show to everyone. Also it will contain thanks message by donation camp. It will motivate more people to donate
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+-   **Notification**
 
-### `npm run build` fails to minify
+    This table contains details of orders that has been accepted and details of donation camp which have Accepted that order.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-   **FinalUser**
+
+    This table contains details of orders that has been accepted and details of people who have donated things.
+
+## MORE ABOUT PROJECT
+
+If you have any question related to functioning of our projects then you can refer our videos. After watching this you will be able to know our project and motive of this project end to end.
+
+-   [FULL VIDEO](https://www.youtube.com/watch?v=Uw8CBWR785Y&feature=youtu.be)
+
+-   [DEMO VIDEO](https://www.youtube.com/watch?v=A2BVjDvugpw)
+
+Click on above link to watch videos
+
+## ABOUT DEPLOYMENT
+
+The Server is also hosted at [PythonAnywhere](https://www.pythonanywhere.com/). Click on the below links to use it directly from the hosted server.
+
+-   [HOME PAGE](http://sac.pythonanywhere.com/)
+
+**_Note : All Data being used is dummy data._**
+
+**Thank You :)**
