@@ -20,12 +20,6 @@ An easy-to-navigate website which can be used to donate food/clothes to the dist
        npm start
     ```
 
-    or, the below command if your default python version is python2 use [python3](https://www.python.org/downloads/)
-
-    ```bash
-      python3 manage.py runserver
-    ```
-
 5. Your server should be up and running now.
 
 ## SACBOT SERVICE AND SLACK
