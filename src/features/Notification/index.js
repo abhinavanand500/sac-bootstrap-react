@@ -1,5 +1,6 @@
 import React from "react";
-import Card from "./Card";
+import Button from "../components/Button";
+import Card from "../components/Card";
 const Notification = () => {
     return (
         <>
@@ -14,7 +15,7 @@ const Notification = () => {
                     contact='8095509320'
                     acceptedAt='9:00am'
                     type='Clothes'
-                />
+                ><Button/></Card>
                 <Card
                     acceptedBy='Abhinav'
                     address='NHCE, Bangalore'

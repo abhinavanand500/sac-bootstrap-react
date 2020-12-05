@@ -47,27 +47,33 @@ const JumbotronAbout = () => {
                 </p>
                 <h2>Stay Safe!</h2>
                 <br />
-                <div style={{}}>
-                    <a href='https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd4580ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378'>
-                        <Button
-                            style={{ value: "btn-dark btn-lg my-2" }}
-                            title='Chat With SacBot'
-                        />
-                    </a>
-                    <Link to='/'>
-                        <Button
-                            style={{ value: "btn-dark btn-lg my-2" }}
-                            title='Donate Foods'
-                            href='/'
-                        />
-                    </Link>
-                    <Link to='/'>
-                        <Button
-                            style={{ value: "btn-dark btn-lg my-2" }}
-                            title='Donate Cloths'
-                            href='/'
-                        />
-                    </Link>
+                <div className='row'>
+                    <div className='col-sm-12 col-md-12 col-lg-3'>
+                        <a href='https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd4580ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378'>
+                            <Button
+                                style={{ value: "btn-dark btn-lg my-2" }}
+                                title='Chat With SacBot'
+                            />
+                        </a>
+                    </div>
+                    <div className='col-sm-12 col-md-12 col-lg-3'>
+                        <Link to='/'>
+                            <Button
+                                style={{ value: "btn-dark btn-lg my-2" }}
+                                title='Donate Foods'
+                                href='/'
+                            />
+                        </Link>
+                    </div>
+                    <div className='col-sm-12 col-md-12 col-lg-3'>
+                        <Link to='/'>
+                            <Button
+                                style={{ value: "btn-dark btn-lg my-2" }}
+                                title='Donate Cloths'
+                                href='/'
+                            />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

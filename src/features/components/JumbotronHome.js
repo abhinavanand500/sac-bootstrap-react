@@ -21,35 +21,43 @@ const JumbotronHome = () => {
                 </p>
                 <p>What do you want to donate ?</p>
 
-                <div>
-                    <Link to='/'>
-                        <Button
-                            style={{ value: "btn-dark btn-lg my-2 inner" }}
-                            title='Donate Foods'
-                            href='/'
-                        />
-                    </Link>
-                    <Link to='/'>
-                        <Button
-                            style={{ value: "btn-dark btn-lg my-2 inner" }}
-                            title='Donate Cloths'
-                            href='/'
-                        />
-                    </Link>
-                    <Link to='/'>
-                        <Button
-                            style={{ value: "btn-dark btn-lg my-2 inner" }}
-                            title='Donate Other Necessities'
-                            href='/'
-                        />
-                    </Link>
-                    <a href='https://www.pmcares.gov.in/en/'>
-                        <Button
-                            style={{ value: "btn-dark btn-lg my-2" }}
-                            title='Donate Money at PM care fund'
-                            href='/'
-                        />
-                    </a>
+                <div className='row'>
+                    <div className='col-sm-12 col-md-12 col-lg-3'>
+                        <Link to='/'>
+                            <Button
+                                style={{ value: "btn-dark btn-lg my-2 inner" }}
+                                title='Donate Foods'
+                                href='/'
+                            />
+                        </Link>
+                    </div>
+                    <div className='col-sm-12 col-md-12 col-lg-3'>
+                        <Link to='/'>
+                            <Button
+                                style={{ value: "btn-dark btn-lg my-2 inner" }}
+                                title='Donate Cloths'
+                                href='/'
+                            />
+                        </Link>
+                    </div>
+                    <div className='col-sm-12 col-md-12 col-lg-4'>
+                        <Link to='/'>
+                            <Button
+                                style={{ value: "btn-dark btn-lg my-2 inner" }}
+                                title='Donate Other Necessities'
+                                href='/'
+                            />
+                        </Link>
+                        {/* </div>
+                    <div className='col-sm-12 col-md-12 col-lg-4'> */}
+                        <a href='https://www.pmcares.gov.in/en/'>
+                            <Button
+                                style={{ value: "btn-dark btn-lg my-2" }}
+                                title='Donate Money at PM care fund'
+                                href='/'
+                            />
+                        </a>
+                    </div>
                 </div>
                 <br />
                 <p>
