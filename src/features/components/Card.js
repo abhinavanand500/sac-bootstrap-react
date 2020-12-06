@@ -30,7 +30,7 @@ const Card = (props) => {
                                 </div>
                             </div>
                         </div>
-                        {props.user && props.accept ? (
+                        {props.user && props.accept && props.button_accept ? (
                             <div className='col-md-2 col-sm-12 '>
                                 <Button
                                     style={{ value: "btn btn-success" }}

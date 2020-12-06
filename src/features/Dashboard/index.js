@@ -25,6 +25,7 @@ const Dashboard = () => {
                     contact='8095509320'
                     acceptedAt='9:00am'
                     accept
+                    button_accept
                     type='Clothes'></Card>
                 <br />
                 <hr />
@@ -39,6 +40,7 @@ const Dashboard = () => {
                     contact='8095509320'
                     acceptedAt='9:00am'
                     accept
+                    button_accept
                     type='Clothes'></Card>
                 <br />
                 <hr />
@@ -53,6 +55,7 @@ const Dashboard = () => {
                     contact='8095509320'
                     acceptedAt='9:00am'
                     accept
+                    button_accept
                     type='Clothes'></Card>
             </div>
         </div>
