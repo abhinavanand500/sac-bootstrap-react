@@ -3,10 +3,10 @@ import Button from "./Button";
 const Card = (props) => {
     return (
         <div className='mt-4 mb-4'>
-            <div class='card'>
-                <div class='card-header'>
-                    <div class='row'>
-                        <div class='col-md-10 col-sm-12'>
+            <div className='card'>
+                <div className='card-header'>
+                    <div className='row'>
+                        <div className='col-md-10 col-sm-12'>
                             <div className='row'>
                                 <div className='col-md-3'>
                                     <h4>
@@ -42,8 +42,8 @@ const Card = (props) => {
                         )}
                     </div>
                 </div>
-                <div class='card-body'>
-                    <h5 class='card-title'>
+                <div className='card-body'>
+                    <h5 className='card-title'>
                         {props.requested ? (
                             <div>
                                 <span style={{ color: "tomato" }}>
@@ -56,7 +56,7 @@ const Card = (props) => {
                                 </span>
                             </div>
                         ) : props.accept ? (
-                            <h5 class='card-title'>
+                            <h5 className='card-title'>
                                 You accepted{" "}
                                 <span style={{ color: "tomato" }}>
                                     noti.endusers
@@ -74,7 +74,7 @@ const Card = (props) => {
                     </h5>
                     <hr />
                     <h5 style={{ color: "darkcyan" }}>Description - </h5>
-                    <p class='card-text'>noti.description</p>
+                    <p className='card-text'>noti.description</p>
                 </div>
             </div>
         </div>

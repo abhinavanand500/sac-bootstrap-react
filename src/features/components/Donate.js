@@ -3,7 +3,7 @@ import "./Component.css";
 const Donate = ({ type, option1, option2, img }) => {
     return (
         <div>
-            <div class='container mt-5'>
+            <div className='container mt-5'>
                 <h3>Please fill in the details of your donation.</h3>
                 <hr />
                 <div className='row'>
@@ -15,12 +15,12 @@ const Donate = ({ type, option1, option2, img }) => {
                     <div className='col-md-6'>
                         <form action='/donateCloth' method='POST'>
                             {option1 ? (
-                                <div class='form-group'>
+                                <div className='form-group'>
                                     <label for='clothType'>{type}</label>
                                     <select
                                         id='clothType'
                                         name='clothType'
-                                        class='form-control'>
+                                        className='form-control'>
                                         <option value='Male'>{option1}</option>
                                         <option value='Female'>
                                             {option2}
@@ -30,19 +30,19 @@ const Donate = ({ type, option1, option2, img }) => {
                             ) : (
                                 ""
                             )}
-                            <div class='form-group'>
+                            <div className='form-group'>
                                 <label for='exampleClothDescription'>
                                     Description of donation.
                                 </label>
                                 <textarea
-                                    class='form-control'
+                                    className='form-control'
                                     id='exampleClothDescription'
                                     name='exampleClothDescription'
                                     cols='20'
                                     rows='5'></textarea>
                             </div>
                             <br />
-                            <button type='submit' class='btn btn-primary'>
+                            <button type='submit' className='btn btn-primary'>
                                 Submit
                             </button>
                         </form>

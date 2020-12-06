@@ -3,7 +3,7 @@ import contactSvg from "./contact.svg";
 import Form from "./Form";
 function Contact() {
     return (
-        <div class='container mt-5'>
+        <div className='container mt-5'>
             <h3>Contact SAC Admin</h3>
             <h6>
                 Note : Please Provide your information in issue block in order
