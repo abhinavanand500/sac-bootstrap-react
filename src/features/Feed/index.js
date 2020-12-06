@@ -56,8 +56,8 @@ const Feed = () => {
                 {/* {% for feed in feeds %} */}
                 <a href='/profile/{{feed.user1}}'>
                     <div class='card my-4'>
-                        <div class='card-header aa' style={{ color: "white" }}>
-                            Thank you for the Donation!
+                        <div class='card-header aa'>
+                            <h4>Thank you for the Donation!</h4>
                         </div>
                         <div class='card-body bb'>
                             <blockquote class='blockquote mb-0'>

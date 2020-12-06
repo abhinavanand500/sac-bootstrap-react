@@ -7,6 +7,10 @@ import Profile from "./features/Profile";
 import Feed from "./features/Feed";
 import Notification from "./features/Notification";
 import Dashboard from "./features/Dashboard";
+import DonateFood from "./features/DonateFood";
+import DonateClothes from "./features/DonateClothes";
+import DonateOthers from "./features/DonateOthers";
+import AcceptedOrder from "./features/AcceptedOrder";
 // import Footer from "./features/components/Footer";
 import "./App.css";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
@@ -22,9 +26,26 @@ function App() {
                     <Route path='/contact' exact component={Contact} />
                     <Route path='/feed' exact component={Feed} />
                     <Route
+                        path='/acceptedOrder'
+                        exact
+                        component={AcceptedOrder}
+                    />
+
+                    <Route
                         path='/notification'
                         exact
                         component={Notification}
+                    />
+                    <Route path='/donateFood' exact component={DonateFood} />
+                    <Route
+                        path='/donateClothes'
+                        exact
+                        component={DonateClothes}
+                    />
+                    <Route
+                        path='/donateOthers'
+                        exact
+                        component={DonateOthers}
                     />
                     <Route path='/dashboard' exact component={Dashboard} />
                     <Redirect to='/' />
