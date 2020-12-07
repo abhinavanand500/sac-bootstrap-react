@@ -11,7 +11,7 @@ import DonateFood from "./features/DonateFood";
 import DonateClothes from "./features/DonateClothes";
 import DonateOthers from "./features/DonateOthers";
 import AcceptedOrder from "./features/AcceptedOrder";
-// import Footer from "./features/components/Footer";
+import Footer from "./features/components/Footer";
 import "./App.css";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 function App() {
@@ -50,7 +50,7 @@ function App() {
                     <Route path='/dashboard' exact component={Dashboard} />
                     <Redirect to='/' />
                 </Switch>
-                {/* <Footer /> */}
+                <Footer />
             </BrowserRouter>
         </div>
     );

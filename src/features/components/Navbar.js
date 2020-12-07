@@ -1,6 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
+import SignupModal from "./SignupModal";
+import LoginModal from "./LoginModal";
 const Navbar = () => {
     return (
         <div>
@@ -136,14 +138,32 @@ const Navbar = () => {
                         <Button
                             style={{ value: "btn btn-success" }}
                             title='Login'
+                            dataToggle='modal'
+                            dataTarget='#signinModal'
                         />
                         <Button
                             style={{ value: "btn btn-success" }}
                             title='Sign Up'
+                            dataToggle='modal'
+                            dataTarget='#signupModal'
                         />
                     </div>
                 </div>
             </nav>
+            <div
+                className='alert alert-success mb-0 alert-dismissible fade show'
+                role='alert'>
+                <strong>Message : </strong> message
+                <button
+                    type='button'
+                    className='close'
+                    data-dismiss='alert'
+                    aria-label='Close'>
+                    <span aria-hidden='true'>&times;</span>
+                </button>
+            </div>
+            <SignupModal />
+            <LoginModal />
         </div>
     );
 };
