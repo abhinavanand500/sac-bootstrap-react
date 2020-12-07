@@ -1,5 +1,5 @@
 import React from "react";
-
+import Button from "./Button";
 const SignupModal = () => {
     return (
         <div>
@@ -113,11 +113,10 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <br />
-                                <button
-                                    type='submit'
-                                    className='btn btn-primary'>
-                                    Submit
-                                </button>
+                                <Button
+                                    style={{ value: "btn btn-primary" }}
+                                    title='SignUp'
+                                />
                             </form>
                         </div>
                     </div>
