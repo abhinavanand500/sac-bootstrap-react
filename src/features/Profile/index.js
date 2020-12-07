@@ -113,7 +113,7 @@ const Profile = () => {
                                                 <div className='row'>
                                                     <div className='mb-3 col-6'>
                                                         <label
-                                                            for='exampleFormControlInput1'
+                                                            forhtml='exampleFormControlInput1'
                                                             className='form-label'>
                                                             First Name
                                                         </label>
@@ -132,7 +132,7 @@ const Profile = () => {
                                                     </div>
                                                     <div className='mb-3 col-6'>
                                                         <label
-                                                            for='exampleFormControlInput2'
+                                                            forhtml='exampleFormControlInput2'
                                                             className='form-label'>
                                                             Last Name
                                                         </label>
@@ -155,7 +155,7 @@ const Profile = () => {
                                                     aria-label='Disabled fieldset example'>
                                                     <div className='mb-3'>
                                                         <label
-                                                            for='disabledTextInput'
+                                                            forhtml='disabledTextInput'
                                                             className='form-label'>
                                                             Username
                                                         </label>
@@ -173,7 +173,7 @@ const Profile = () => {
                                                     </div>
                                                     <div className='mb-3'>
                                                         <label
-                                                            for='disabledTextInput'
+                                                            forhtml='disabledTextInput'
                                                             className='form-label'>
                                                             Email
                                                         </label>
@@ -192,7 +192,7 @@ const Profile = () => {
                                                 </fieldset>
                                                 <div className='mb-3'>
                                                     <label
-                                                        for='exampleFormControlInput1'
+                                                        forhtml='exampleFormControlInput1'
                                                         className='form-label'>
                                                         Phone
                                                     </label>
@@ -207,7 +207,7 @@ const Profile = () => {
                                                 </div>
                                                 <div className='mb-3'>
                                                     <label
-                                                        for='exampleFormControlInput1'
+                                                        forhtml='exampleFormControlInput1'
                                                         className='form-label'>
                                                         Address
                                                     </label>
@@ -222,7 +222,7 @@ const Profile = () => {
                                                 </div>
                                                 <div className='mb-3'>
                                                     <label
-                                                        for='exampleFormControlInput1'
+                                                        forhtml='exampleFormControlInput1'
                                                         className='form-label'>
                                                         Postal-Code
                                                     </label>
@@ -264,7 +264,7 @@ const Profile = () => {
                                                         disabled
                                                         aria-label='Disabled fieldset example'>
                                                         <label
-                                                            for='disabledTextInput'
+                                                            forhtml='disabledTextInput'
                                                             className='form-label'>
                                                             Username
                                                         </label>
@@ -314,7 +314,7 @@ const Profile = () => {
                                                 action='/changepassword'
                                                 method='POST'>
                                                 <label
-                                                    for='inputPassword5'
+                                                    forhtml='inputPassword5'
                                                     className='form-label'>
                                                     Change Password
                                                 </label>
@@ -403,7 +403,7 @@ const Profile = () => {
                                                     />
                                                     <label
                                                         className='form-check-label'
-                                                        for='flexCheckDefault'>
+                                                        forhtml='flexCheckDefault'>
                                                         Email each time when
                                                         your account gets logged
                                                         In
@@ -418,7 +418,7 @@ const Profile = () => {
                                                     />
                                                     <label
                                                         className='form-check-label'
-                                                        for='flexCheckChecked'>
+                                                        forhtml='flexCheckChecked'>
                                                         Email your all ongoing
                                                         detail of each months
                                                     </label>
@@ -519,7 +519,7 @@ const Profile = () => {
                                                 </h5>
                                                 <div className='col-md-6'>
                                                     <label
-                                                        for='inputEmail4'
+                                                        forhtml='inputEmail4'
                                                         className='form-label'>
                                                         First Name On Card
                                                     </label>
@@ -531,7 +531,7 @@ const Profile = () => {
                                                 </div>
                                                 <div className='col-md-6'>
                                                     <label
-                                                        for='inputEmail4'
+                                                        forhtml='inputEmail4'
                                                         className='form-label'>
                                                         Last Name On Card
                                                     </label>
@@ -543,7 +543,7 @@ const Profile = () => {
                                                 </div>
                                                 <div className='col-12'>
                                                     <label
-                                                        for='inputAddress'
+                                                        forhtml='inputAddress'
                                                         className='form-label'>
                                                         Card Number
                                                     </label>
@@ -556,7 +556,7 @@ const Profile = () => {
                                                 </div>
                                                 <div className='col-12'>
                                                     <label
-                                                        for='inputAddress2'
+                                                        forhtml='inputAddress2'
                                                         className='form-label'>
                                                         Confirm Card Number
                                                     </label>
@@ -569,7 +569,7 @@ const Profile = () => {
                                                 </div>
                                                 <div className='col-md-7'>
                                                     <label
-                                                        for='inputCity'
+                                                        forhtml='inputCity'
                                                         className='form-label'>
                                                         Enter Date
                                                     </label>
@@ -582,7 +582,7 @@ const Profile = () => {
                                                 </div>
                                                 <div className='col-md-3'>
                                                     <label
-                                                        for='inputZip'
+                                                        forhtml='inputZip'
                                                         className='form-label'>
                                                         CVV
                                                     </label>
@@ -601,7 +601,7 @@ const Profile = () => {
                                                         />
                                                         <label
                                                             className='form-check-label'
-                                                            for='gridCheck'>
+                                                            forhtml='gridCheck'>
                                                             Check me out
                                                         </label>
                                                     </div>

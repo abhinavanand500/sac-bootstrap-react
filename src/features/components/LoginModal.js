@@ -4,42 +4,42 @@ const LoginModal = () => {
     return (
         <div>
             <div
-                class='modal fade'
+                className='modal fade'
                 id='signinModal'
-                tabindex='-1'
+                tabIndex='-1'
                 role='dialog'
                 aria-labelledby='signupModal'
                 aria-hidden='true'>
-                <div class='modal-dialog'>
-                    <div class='modal-content'>
-                        <div class='modal-header'>
-                            <h5 class='modal-title' id='signinModal'>
+                <div className='modal-dialog'>
+                    <div className='modal-content'>
+                        <div className='modal-header'>
+                            <h5 className='modal-title' id='signinModal'>
                                 Login Here
                             </h5>
                             <button
                                 type='button'
-                                class='close'
+                                className='close'
                                 data-dismiss='modal'
                                 aria-label='Close'>
                                 <span aria-hidden='true'>&times;</span>
                             </button>
                         </div>
-                        <div class='modal-body'>
+                        <div className='modal-body'>
                             <form action='/handleLogin' method='post'>
-                                <div class='form-group'>
-                                    <label for='user'>Username</label>
+                                <div className='form-group'>
+                                    <label forhtml='user'>Username</label>
                                     <input
                                         type='text'
-                                        class='form-control'
+                                        className='form-control'
                                         id='loginuser'
                                         name='loginusername'
                                     />
                                 </div>
-                                <div class='form-group'>
-                                    <label for='loginpass'>Password</label>
+                                <div className='form-group'>
+                                    <label forhtml='loginpass'>Password</label>
                                     <input
                                         type='password'
-                                        class='form-control'
+                                        className='form-control'
                                         id='loginpass'
                                         name='loginpass'
                                     />

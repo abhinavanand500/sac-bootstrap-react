@@ -1,5 +1,6 @@
 import React from "react";
 import contactSvg from "./contact.svg";
+import "../components/Component.css";
 import Form from "./Form";
 function Contact() {
     return (
@@ -15,7 +16,7 @@ function Contact() {
                     <div className='container mt-5'>
                         <br />
                         <img
-                            style={{ width: "100%" }}
+                            className='image-left'
                             src={contactSvg}
                             alt='hii'
                         />

@@ -5,7 +5,7 @@ const Form = () => {
         <div>
             <form action='/contact' method='POST'>
                 <div className='form-group'>
-                    <label for='exampleInputName'>Name</label>
+                    <label forhtml='exampleInputName'>Name</label>
                     <input
                         type='text'
                         className='form-control'
@@ -15,7 +15,7 @@ const Form = () => {
                     />
                 </div>
                 <div className='form-group'>
-                    <label for='exampleInputEmail1'>Email address</label>
+                    <label forhtml='exampleInputEmail1'>Email address</label>
                     <input
                         type='email'
                         className='form-control'
@@ -25,7 +25,7 @@ const Form = () => {
                     />
                 </div>
                 <div className='form-group'>
-                    <label for='exampleInputPassword1'>Phone</label>
+                    <label forhtml='exampleInputPassword1'>Phone</label>
                     <input
                         type='text'
                         className='form-control'
@@ -34,7 +34,9 @@ const Form = () => {
                     />
                 </div>
                 <div className='form-group'>
-                    <label for='exampleInputPassword2'>How can we help?</label>
+                    <label forhtml='exampleInputPassword2'>
+                        How can we help?
+                    </label>
                     <textarea
                         className='form-control'
                         id='exampleInputPassword2'

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Component.css";
+import Button from "./Button";
 const Donate = ({ type, option1, option2, img }) => {
     return (
         <div>
@@ -16,7 +17,7 @@ const Donate = ({ type, option1, option2, img }) => {
                         <form action='/donateCloth' method='POST'>
                             {option1 ? (
                                 <div className='form-group'>
-                                    <label for='clothType'>{type}</label>
+                                    <label forhtml='clothType'>{type}</label>
                                     <select
                                         id='clothType'
                                         name='clothType'
@@ -31,7 +32,7 @@ const Donate = ({ type, option1, option2, img }) => {
                                 ""
                             )}
                             <div className='form-group'>
-                                <label for='exampleClothDescription'>
+                                <label forhtml='exampleClothDescription'>
                                     Description of donation.
                                 </label>
                                 <textarea
@@ -42,9 +43,10 @@ const Donate = ({ type, option1, option2, img }) => {
                                     rows='5'></textarea>
                             </div>
                             <br />
-                            <button type='submit' className='btn btn-primary'>
-                                Submit
-                            </button>
+                            <Button
+                                style={{ value: "btn btn-primary" }}
+                                title='Submit'
+                            />
                         </form>
                     </div>
                 </div>

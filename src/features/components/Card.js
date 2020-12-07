@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import "./Component.css";
 const Card = (props) => {
     return (
         <div className='mt-4 mb-4'>
@@ -46,26 +47,19 @@ const Card = (props) => {
                     <h5 className='card-title'>
                         {props.requested ? (
                             <div>
-                                <span style={{ color: "tomato" }}>
-                                    other.user
-                                </span>{" "}
-                                wants to donate{" "}
-                                <span style={{ color: "chocolate" }}>
-                                    {" "}
-                                    "items"
-                                </span>
+                                <span className='tomato'>other.user</span> wants
+                                to donate{" "}
+                                <span className='chocolate'> "items"</span>
                             </div>
                         ) : props.accept ? (
                             <h5 className='card-title'>
                                 You accepted{" "}
-                                <span style={{ color: "tomato" }}>
-                                    noti.endusers
-                                </span>{" "}
+                                <span className='tomato'>noti.endusers</span>{" "}
                                 donation of noti.type1
                             </h5>
                         ) : (
                             <div>
-                                <span style={{ color: "tomato" }}>
+                                <span className='tomato'>
                                     {props.acceptedBy}
                                 </span>{" "}
                                 accepted your request to donate {props.type}
@@ -73,7 +67,7 @@ const Card = (props) => {
                         )}
                     </h5>
                     <hr />
-                    <h5 style={{ color: "darkcyan" }}>Description - </h5>
+                    <h5 className='darkcyan'>Description - </h5>
                     <p className='card-text'>noti.description</p>
                 </div>
             </div>

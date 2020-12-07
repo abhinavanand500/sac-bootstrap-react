@@ -6,7 +6,7 @@ const SignupModal = () => {
             <div
                 className='modal fade'
                 id='signupModal'
-                tabindex='-1'
+                tabIndex='-1'
                 role='dialog'
                 aria-labelledby='signupModal'
                 aria-hidden='true'>
@@ -27,7 +27,7 @@ const SignupModal = () => {
                         <div className='modal-body'>
                             <form action='/handleSignup' method='post'>
                                 <div className='form-group'>
-                                    <label for='username'>Username</label>
+                                    <label forhtml='username'>Username</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -37,7 +37,7 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='fname'>First Name</label>
+                                    <label forhtml='fname'>First Name</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -47,7 +47,7 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='lname'>Last Name</label>
+                                    <label forhtml='lname'>Last Name</label>
                                     <input
                                         type='text'
                                         className='form-control'
@@ -57,7 +57,7 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='emailid'>Email</label>
+                                    <label forhtml='emailid'>Email</label>
                                     <input
                                         type='email'
                                         className='form-control'
@@ -67,7 +67,7 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='exampleInputPassword1'>
+                                    <label forhtml='exampleInputPassword1'>
                                         Password
                                     </label>
                                     <input
@@ -79,7 +79,7 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='exampleInputPassword2'>
+                                    <label forhtml='exampleInputPassword2'>
                                         Confirm your Password
                                     </label>
                                     <input
@@ -91,7 +91,7 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='lna'>
+                                    <label forhtml='lna'>
                                         Postal Code of your Area
                                     </label>
                                     <input
@@ -103,7 +103,7 @@ const SignupModal = () => {
                                     />
                                 </div>
                                 <div className='form-group'>
-                                    <label for='lnam'>Phone Number</label>
+                                    <label forhtml='lnam'>Phone Number</label>
                                     <input
                                         type='text'
                                         className='form-control'
