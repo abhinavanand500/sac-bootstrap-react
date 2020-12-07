@@ -116,6 +116,7 @@ const SignupModal = () => {
                                 <Button
                                     style={{ value: "btn btn-primary" }}
                                     title='SignUp'
+                                    dataDismiss='modal'
                                 />
                             </form>
                         </div>

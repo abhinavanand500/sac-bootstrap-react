@@ -27,11 +27,6 @@ const Navbar = () => {
                         <ul className='navbar-nav mr-auto mb-2 mb-lg-0'>
                             <li className='nav-item'>
                                 <NavLink
-                                    // className={`nav-link ${
-                                    //     activeClassName === "selected"
-                                    //         ? "active"
-                                    //         : ""
-                                    // }`}
                                     activeStyle={{
                                         fontWeight: "bold",
                                         color: "white",
@@ -103,7 +98,10 @@ const Navbar = () => {
                                     Feed
                                 </NavLink>
                             </li>
-                            <li className='nav-item'>
+                            <li
+                                className='nav-item'
+                                // data-target='#navbarSupportedContent'
+                                data-toggle='collapse'>
                                 <NavLink
                                     className='nav-link'
                                     activeStyle={{

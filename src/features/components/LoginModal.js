@@ -48,6 +48,7 @@ const LoginModal = () => {
                                 <Button
                                     style={{ value: "btn btn-primary" }}
                                     title='Login'
+                                    dataDismiss='modal'
                                 />
                             </form>
                         </div>
