@@ -1,3 +1,5 @@
+/* eslint-disable no-nested-ternary */
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
@@ -11,6 +13,7 @@ const Card = ({
     contact,
     acceptedAt,
     accept,
+    type,
     buttonAccept,
 }) => (
     <div className="mt-4 mb-4">
@@ -26,10 +29,22 @@ const Card = ({
                                 <h4>{requested ? 'Requested At' : 'Accepted At '} </h4>
                             </div>
                             <div className="col-md-7">
-                                <h4>:: {acceptedBy}</h4>
-                                <h4>:: {address}</h4>
-                                <h4>:: {contact}</h4>
-                                <h4>:: {acceptedAt}</h4>
+                                <h4>
+                                    ::
+                                    {acceptedBy}
+                                </h4>
+                                <h4>
+                                    ::
+                                    {address}
+                                </h4>
+                                <h4>
+                                    ::
+                                    {contact}
+                                </h4>
+                                <h4>
+                                    ::
+                                    {acceptedAt}
+                                </h4>
                             </div>
                         </div>
                     </div>
@@ -47,19 +62,18 @@ const Card = ({
                     {requested ? (
                         <div>
                             <span className="tomato">other.user</span> wants to donate{' '}
-                            <span className="chocolate"> "items"</span>
+                            <span className="chocolate"> items</span>
                         </div>
                     ) : accept ? (
                         <h5 className="card-title">
                             You accepted <span className="tomato">noti.endusers</span> donation of
-                            noti.type1
+                            notitype1
                         </h5>
                     ) : (
                         <div>
-                            <span className="tomato">{acceptedBy}</span> accepted your request
-                            to donate 
-{' '}
-{type}
+                            <span className="tomato">{acceptedBy}</span> accepted your request to
+                            donate
+                            {type}
                         </div>
                     )}
                 </h5>
@@ -80,6 +94,7 @@ Card.propTypes = {
     acceptedAt: PropTypes.string,
     accept: PropTypes.string,
     buttonAccept: PropTypes.string,
+    type: PropTypes.string,
 };
 Card.defaultProps = {
     user: '',
@@ -90,6 +105,7 @@ Card.defaultProps = {
     acceptedAt: '',
     accept: '',
     buttonAccept: '',
+    type: '',
 };
 
 export default Card;

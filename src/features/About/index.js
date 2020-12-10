@@ -1,12 +1,10 @@
-import React from "react";
-import JumbotronAbout from "../components/JumbotronAbout";
+import React from 'react';
+import JumbotronAbout from '../components/JumbotronAbout';
 
-const About = () => {
-    return (
-        <div className='container'>
-            <JumbotronAbout />
-        </div>
-    );
-};
+const About = () => (
+    <div className="container">
+        <JumbotronAbout />
+    </div>
+);
 
 export default About;
