@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Button from './Button';
@@ -122,22 +124,18 @@ const Navbar = () => (
                         </li>
                     </ul>
                     <a
-                        href="https://join.slack.com/t/sacate/shared_invite/
-                        zt-g05v625j-CYp~WYorMyCYT7O2b3z4pg"
+                        href="https://join.slack.com/t/sacate/shared_invite/zt-g05v625j-CYp~WYorMyCYT7O2b3z4pg"
                         target="_blank"
                         rel="noreferrer"
                     >
                         <Button
                             style={{ value: 'btn btn-outline-success' }}
                             title="JOIN US ON SLACK"
-                            href="https://join.slack.com/t/sacate/shared_invite/
-                            zt-g05v625j-CYp~WYorMyCYT7O2b3z4pg"
+                            href="https://join.slack.com/t/sacate/shared_invite/zt-g05v625j-CYp~WYorMyCYT7O2b3z4pg"
                         />
                     </a>
                     <a
-                        href="https://web-chat.global.assistant.watson.cloud.ibm.com
-                        /preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-
-                        92a2-dcdd4580ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378"
+                        href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd4580ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -162,8 +160,7 @@ const Navbar = () => (
             </div>
         </nav>
         <div className="alert alert-success mb-0 alert-dismissible fade show" role="alert">
-            <strong>Message : </strong>
-            message
+            <strong>Message : </strong> message
             <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
