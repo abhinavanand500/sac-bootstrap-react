@@ -27,7 +27,6 @@ function App() {
                     <Route path="/contact" exact component={Contact} />
                     <Route path="/feed" exact component={Feed} />
                     <Route path="/acceptedOrder" exact component={AcceptedOrder} />
-
                     <Route path="/notification" exact component={Notification} />
                     <Route path="/donateFood" exact component={DonateFood} />
                     <Route path="/donateClothes" exact component={DonateClothes} />
