@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
@@ -10,9 +11,7 @@ const JumbotronHome = () => (
             <Button
                 style={{ value: 'btn-dark btn-lg my-2' }}
                 title="Chat With Our Assistant"
-                href="https://web-chat.global.assistant.watson.cloud.ibm.com/
-                preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd45
-                80ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378"
+                href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd4580ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378"
             />
 
             <hr className="my-4" />

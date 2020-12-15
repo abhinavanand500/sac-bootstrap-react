@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
@@ -46,11 +47,7 @@ const JumbotronAbout = () => (
             <h2>Stay Safe!</h2>
             <br />
             <div className="row">
-                <a
-                    href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.
-                html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd4580ab57&serviceInstan
-                ceID=aee528ff-74f7-4657-b398-d01bb7a36378"
-                >
+                <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=2f56951f-120f-4309-92a2-dcdd4580ab57&serviceInstanceID=aee528ff-74f7-4657-b398-d01bb7a36378">
                     <Button style={{ value: 'btn-dark btn-lg my-2' }} title="Chat With SacBot" />
                 </a>
                 <Link to="/donateFood">
