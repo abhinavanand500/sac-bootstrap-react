@@ -3,13 +3,15 @@ import PropTypes from 'prop-types';
 import './Component.css';
 
 // eslint-disable-next-line react/prop-types
-const Button = ({ dataToggle, dataTarget, dataDismiss, style: { value }, title }) => (
+// eslint-disable-next-line no-unused-vars
+const Button = ({ dataToggle, dataTarget, dataDismiss, style: { value }, title, onclick }) => (
     <div>
         <button
             type="button"
             data-toggle={dataToggle}
             data-target={dataTarget}
             data-dismiss={dataDismiss}
+            onClick={onclick}
             className={`inlineBlock btn mx-2 my-2 ${value}`}
         >
             {title}
