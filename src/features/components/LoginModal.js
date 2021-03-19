@@ -1,21 +1,26 @@
+/* eslint-disable object-shorthand */
 /* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Button from './Button';
+import axios from '../../apis/axios';
 
 const LoginModal = () => {
-    const [uname, setUname] = useState("");
-    const [password, setPassword] = useState("");
-    const ss = ()=> {
+    const [uname, setUname] = useState('');
+    const [password, setPassword] = useState('');
+    const apiLogin = async () => {
         const collection = {
-            "uname" : uname,
-            "pass" : password
-        }
-        
-    }
-    
-    return(
-        <form onSubmit={ss}>
+            uname: uname,
+            pass: password,
+        };
+        console.log(JSON.stringify(collection));
+        const response = await axios.get('', {
+            params: collection,
+        });
+    };
+
+    return (
+        <form onSubmit={apiLogin}>
             <div
                 className="modal fade"
                 id="signinModal"
@@ -48,7 +53,9 @@ const LoginModal = () => {
                                         className="form-control"
                                         id="loginuser"
                                         name="loginusername"
-                                        onChange={(e)=>{setUname(e.target.value)}}
+                                        onChange={(e) => {
+                                            setUname(e.target.value);
+                                        }}
                                         value={uname}
                                     />
                                 </div>
@@ -59,7 +66,9 @@ const LoginModal = () => {
                                         className="form-control"
                                         id="loginpass"
                                         name="loginpass"
-                                        onChange={(e)=>{setPassword(e.target.value)}}
+                                        onChange={(e) => {
+                                            setPassword(e.target.value);
+                                        }}
                                         value={password}
                                     />
                                 </div>
@@ -68,9 +77,8 @@ const LoginModal = () => {
                                     style={{ value: 'btn btn-primary' }}
                                     title="Login"
                                     dataDismiss="modal"
-                                    onclick={ss}
+                                    onclick={apiLogin}
                                 />
-                                
                             </form>
                         </div>
                     </div>
@@ -78,7 +86,6 @@ const LoginModal = () => {
             </div>
         </form>
     );
-    
-}
+};
 
 export default LoginModal;
